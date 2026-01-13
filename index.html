@@ -1,15 +1,21 @@
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pauseology</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
 </head>
 <body>
-    <div class="support">Check this out in Chrome 115+ / Chrome Canary</div>
+<div class="support">Check this out in Chrome 115+ / Chrome Canary</div>
 <nav>
   <div class="nav__content">
-    <a href="https://twitter.com/intent/follow?screen_name=jh3yy" target="_blank">Follow</a>
+    <div class="lang-switch">
+      <button data-lang="ru">RU</button>
+      <button data-lang="lv">LV</button>
+      <button data-lang="en">EN</button>
+    </div>
+    <a href="" target="_blank" data-i18n="hero.cta">Book a Session</a>
   </div>
 </nav>
 <section style="
@@ -17,8 +23,8 @@
 ">
   <div class="section__content">
     <h1>
-      <span>тут подзаголовок</span>
-      <span>Эпичность</span>
+      <span data-i18n="hero.title"></span>
+      <span data-i18n="about.title"></span>
     </h1>
   </div>
 </section>
@@ -26,7 +32,7 @@
   <div class="cta">
     <div class="cta__content">
       <a href="" target="_blank" rel="noopener noreferrer">
-        <span>call to action 1</span>
+        <span data-i18n="hero.cta"></span>
         <span>
           <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
             <path fill-rule="evenodd" d="M12 3.75a.75.75 0 01.75.75v6.75h6.75a.75.75 0 010 1.5h-6.75v6.75a.75.75 0 01-1.5 0v-6.75H4.5a.75.75 0 010-1.5h6.75V4.5a.75.75 0 01.75-.75z" clip-rule="evenodd" />
@@ -36,9 +42,7 @@
     </div>
   </div>
   <div class="section__content">
-    <p>
-      тут эпичный текст <span>очень сильный </span> очень сильный текст который
-      <span>мотивирует </span>. Прям сильный текст
+    <p data-i18n="main.text1" data-i18n-html>
     </p>
   </div>
 </section>
@@ -47,7 +51,7 @@
   <div class="cta">
     <div class="cta__content">
       <a href="https://codepen.io/jh3y/details/zYyzYpY" target="_blank" rel="noopener noreferrer">
-        <span>Call to action 2</span>
+        <span data-i18n="hero.cta"></span>
         <span>
           <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
             <path d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z" />
@@ -57,10 +61,7 @@
     </div>
   </div>
   <div class="section__content">
-    <p>
-      тут эпичный текст на фоне видео  <span>Эпичность</span>. 
-      тут можно написать что то на взрослом <span>про осознаность</span>. Мотивация
-      <span>дисциплина</span>.
+    <p data-i18n="main.text2" data-i18n-html>
     </p>
   </div>
 </section>
@@ -68,7 +69,7 @@
   <div class="cta">
     <div class="cta__content">
       <a href="https://twitter.com/intent/tweet?text=%22Apple%20Style%20CTA%20Reveal%20with%20CSS%20scroll-driven%20animations%22%20via%20%40jh3yy%0Ahttps://codepen.io/jh3y/pen/zYyzYpY" target="_blank" rel="noopener noreferrer">
-        <span>call to action 3 </span>
+        <span data-i18n="hero.cta"></span>
         <span>
           <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <title>X</title>
@@ -79,11 +80,15 @@
     </div>
   </div>
   <div class="section__content">
-    <h2><span>очередной эпичный </span><span>текст</span></h2>
+    <p data-i18n="about.text1" data-i18n-html>
+    </p>
   </div>
 </section>
 <section>
-  <h2>какой то текст</h2>
+  <h2 data-i18n="about.text2"></h2>
+</section>
+<section>
+  <h2 data-i18n="footer.text"></h2>
 </section>
 </body>
 </html>
